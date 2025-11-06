@@ -25,7 +25,7 @@ class Progra
     {
         using (HttpClient client = new HttpClient())
         {
-            client.DefaultRequestHeaders.Add("Autohorization", $"Bearer{apiKey}");
+            client.DefaultRequestHeaders.Add("Authorization", $"Bearer{apiKey}");
 
             var requestBody = new
             {
